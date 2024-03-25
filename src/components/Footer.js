@@ -12,7 +12,7 @@ const Footer = () => {
           <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             <div>
               <img
-                src="/logo_Softylus.svg"
+                src="/Logo_Softylus.svg"
                 alt="Softylus Logo"
                 className="logo"
               />

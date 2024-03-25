@@ -21,7 +21,7 @@ const FAQ = () => {
           {faqs.map((faq) => (
             <Accordion key={faq.id} sx={{ background: "transparent" }}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon className="text-white" />}
                 aria-controls={`${faq.id}-content`}
                 id={`${faq.id}-header`}
               >
