@@ -14,8 +14,8 @@ const Cards = () => {
       </header>
       <article className="sec-card">
         <div className="single-card">
-          <StaticImage
-            src="../../static/Softwaredev.svg"
+          <img
+            src="/Softwaredev.svg"
             alt="Software and Web Development"
             className="img-card bg-transparent"
           />
@@ -26,10 +26,10 @@ const Cards = () => {
           </p>
         </div>
         <div className="single-card">
-          <StaticImage
-            src="../../static/mobiledev.svg"
+          <img
+            src="/mobiledev.svg"
             alt="Mobile Development Services"
-            className="img-card"
+            className="img-card bg-transparent"
           />
           <h2>Mobile development</h2>
           <p>
@@ -38,10 +38,10 @@ const Cards = () => {
           </p>
         </div>
         <div className="single-card">
-          <StaticImage
-            src="../../static/UXDesign.svg"
+          <img
+            src="/UXDesign.svg"
             alt="UI/UX Design Services"
-            className="img-card"
+            className="img-card bg-transparent"
           />
           <h2>UI/UX design</h2>
           <p>
@@ -50,10 +50,10 @@ const Cards = () => {
           </p>
         </div>
         <div className="single-card">
-          <StaticImage
-            src="../../static/Softwaredev (1).svg"
+          <img
+            src="/Softwaredev (1).svg"
             alt="Maintenance and Update Services"
-            className="img-card"
+            className="img-card bg-transparent"
           />
           <h2>Maintenance and update</h2>
           <p>
@@ -62,10 +62,10 @@ const Cards = () => {
           </p>
         </div>
         <div className="single-card">
-          <StaticImage
-            src="../../static/mobiledev (1).svg"
+          <img
+            src="/mobiledev (1).svg"
             alt="Analysis and Planning Services"
-            className="img-card"
+            className="img-card bg-transparent"
           />
           <h2>Analysis and planning</h2>
           <p>
@@ -74,10 +74,10 @@ const Cards = () => {
           </p>
         </div>
         <div className="single-card">
-          <StaticImage
-            src="../../static/Softwaredev (2).svg"
+          <img
+            src="/Softwaredev (2).svg"
             alt="SEO Services"
-            className="img-card"
+            className="img-card bg-transparent"
           />
           <h2>SEO services</h2>
           <p>
