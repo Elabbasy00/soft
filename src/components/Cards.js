@@ -27,7 +27,7 @@ const Cards = () => {
         </div>
         <div className="single-card">
           <img
-            src="/mobiledev.svg"
+            src="/Mobiledev.svg"
             alt="Mobile Development Services"
             className="img-card bg-transparent"
           />
@@ -63,7 +63,7 @@ const Cards = () => {
         </div>
         <div className="single-card">
           <img
-            src="/mobiledev (1).svg"
+            src="/Mobiledev (1).svg"
             alt="Analysis and Planning Services"
             className="img-card bg-transparent"
           />
