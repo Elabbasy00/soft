@@ -16,10 +16,10 @@ const clients = [
 ];
 function ClientSlider() {
   return (
-    <div className="md:container md:mx-auto overflow-hidden my-10">
+    <div className="md:mx-auto overflow-hidden my-10">
       <SwiperComponent
         className="pb-0"
-        slidesPerView={5}
+        slidesPerView={7}
         loop={true}
         spaceBetween={20}
         modules={[Autoplay]}
@@ -33,19 +33,19 @@ function ClientSlider() {
             spaceBetween: 5,
           },
           360: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          576: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          768: {
+          576: {
             slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 5,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 7,
             spaceBetween: 40,
           },
         }}

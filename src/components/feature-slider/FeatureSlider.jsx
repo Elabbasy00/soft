@@ -14,13 +14,13 @@ const featurres = [
 function FeatureSlider() {
   return (
     <div className="md:container md:mx-auto overflow-hidden my-10">
-      <h1 className="text-4xl text-center mb-5 mt-12">We featured on</h1>
+      <h1 className="text-5xl text-center mb-5 mt-12">We featured on</h1>
       <SwiperComponent
         className="pb-0"
         slidesPerView={5}
         loop={true}
         spaceBetween={20}
-        modules={[Autoplay]}
+        // modules={[Autoplay]}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -50,7 +50,9 @@ function FeatureSlider() {
       >
         {featurres.map((item) => (
           <SwiperSlide key={item.id}>
-            <img src={item.image} className="w-fit h-fit object-cover" />
+            <center>
+              <img src={item.image} className="w-fit h-fit object-cover" />
+            </center>
           </SwiperSlide>
         ))}
       </SwiperComponent>

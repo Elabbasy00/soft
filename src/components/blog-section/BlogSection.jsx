@@ -26,9 +26,9 @@ const blogs = [
 ];
 function BlogSection() {
   return (
-    <section className="md:container md:mx-auto px-3 py-20">
-      <h1 className="text-4xl text-center my-10">Our Latest Articles</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <section className="md:container md:mx-auto px-3 py-10 relative min-h-[800px] h-full">
+      <h1 className="text-5xl  text-center my-10">Our Latest Articles</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  ">
         {blogs.map((item) => (
           <BlogCard item={item} key={item.id} />
         ))}

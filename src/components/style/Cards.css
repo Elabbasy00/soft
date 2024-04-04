@@ -24,15 +24,23 @@
 .sec-card{
     display: grid;
     grid-gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     grid-template-columns: repeat(3, 1fr);
 }
 .single-card{
     text-align: left;
-    width: 400px;
+    width: 100%;
+    height: auto;
     background-color: #1D1313;
-    padding: 35px;
+    padding: 10px 15px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.single-card img {
+    width: 65px !important;
 }
 
 .img-card img{

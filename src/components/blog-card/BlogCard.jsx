@@ -3,7 +3,10 @@ import React from "react";
 
 function BlogCard({ item }) {
   return (
-    <div class="max-w-sm bg-[#1D1313] rounded-lg shadow w-fit mx-auto relative overflow-hidden group/result h-auto">
+    <div
+      key={item.id}
+      class="max-w-sm bg-mainDark rounded-lg ease-out duration-300 transition-all shadow w-fit h-[450px] hover:h-full mx-auto relative overflow-hidden group"
+    >
       <img class="rounded-t-lg" src={item.imgUrl} alt="" />
 
       <div class="px-3 py-4">
@@ -16,7 +19,7 @@ function BlogCard({ item }) {
         </p>
         <Link
           to={item.url}
-          className="no-underline inline-flex items-center justify-center px-2 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
+          className="no-underline  group-hover:translate-y-[0px] ease-out duration-300 transition-all inline-flex  translate-y-[80px] items-center justify-center px-3 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
         >
           Read more
           <svg

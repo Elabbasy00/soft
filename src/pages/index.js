@@ -26,37 +26,39 @@ const IndexPage = () => {
         Title="Elevate your software development endeavors to new heights. "
         SubHeading="Build world-class digital products with a team of design, development and strategy experts. All in one place."
         buttonText="Get free consultation"
+        overSpan={"Easily,Smoothly,Effortlessly"}
       />
       {/* <Clients /> */}
-      <ClientSlider />
-      <TowSideLayout imgUrl={"/coding.gif"}>
-        <h1 className="text-5xl mb-3">
-          Building software solutions with high resolution
-        </h1>
-        <p>
-          We help customers with digitalized solutions in web development,
-          mobile app development, and UI/UX design. We provide services for
-          businesses of all sizes in different niches.
-        </p>
-        <div class="grid grid-rows-2 md:grid-flow-col gap-3 grid-flow-row ">
-          <IconCard imageUrl="/icon1.svg" text="User-Centric Focus" />
-          <IconCard imageUrl="/icon3.svg" text="Performance Optimization" />
-          <IconCard imageUrl="/icon2.svg" text="Developmental Accuracy" />
-          <IconCard imageUrl="/icon4.svg" text="Security Vigilance" />
+      <div className="md:container md:mx-auto">
+        <ClientSlider />
+        <TowSideLayout imgUrl={"/coding.gif"}>
+          <h1 className="text-5xl mb-3">
+            Building software solutions with high resolution
+          </h1>
+          <p>
+            We help customers with digitalized solutions in web development,
+            mobile app development, and UI/UX design. We provide services for
+            businesses of all sizes in different niches.
+          </p>
+          <div class="grid grid-rows-2 md:grid-flow-col gap-3 grid-flow-row ">
+            <IconCard imageUrl="/icon1.svg" text="User-Centric Focus" />
+            <IconCard imageUrl="/icon3.svg" text="Performance Optimization" />
+            <IconCard imageUrl="/icon2.svg" text="Developmental Accuracy" />
+            <IconCard imageUrl="/icon4.svg" text="Security Vigilance" />
+          </div>
+          <div className="my-4">
+            <Link
+              to="/ContactUs"
+              className="no-underline inline-flex items-center justify-center px-4 py-[12px] text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto"
+            >
+              Get free consultation
+            </Link>
+          </div>
+        </TowSideLayout>
+        <div class="container">
+          <img class="circle-sec" id="circle1" src="/Frame 1000003358.svg" />
         </div>
-        <div className="my-4">
-          <Link
-            to="/ContactUs"
-            className="no-underline inline-flex items-center justify-center px-3 py-3 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto"
-          >
-            Get free consultation
-          </Link>
-        </div>
-      </TowSideLayout>
-      <div class="container">
-        <img class="circle-sec" id="circle1" src="/Frame 1000003358.svg" />
-      </div>
-      {/* <SecOne
+        {/* <SecOne
         Title="Building software solutions with high resolution"
         SubHeading="We help customers with digitalized solutions in web development, mobile app development, and UI/UX design. We provide services for businesses of all sizes in different niches."
         buttonText="Get free consultation"
@@ -73,17 +75,19 @@ const IndexPage = () => {
         Des4="Security Vigilance"
         path="/ContactUs"
       /> */}
-      <Cards />
+        <Cards />
 
-      <SecTwo />
-      <BlogSection />
-      <FeatureSlider />
-      {/* <Wefeaturedon /> */}
+        <SecTwo />
+        <FeatureSlider />
+        <BlogSection />
+        {/* <Wefeaturedon /> */}
+      </div>
       <FooterCon
         Title="See if"
-        TitleOverSpan="is right for you.Let’s make something great"
+        TitleOverSpan="is right for you. Let’s make something great"
         SubHeading="Talk to us and get the help you need with no extra fees, consult for free."
       />
+
       <Footer />
     </>
   );
