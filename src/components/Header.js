@@ -67,11 +67,14 @@ const Header = ({
               ref={container}
               className="inline-flex m-0 p-0 relative animate_wrapper"
             >
-              {overSpan.split(",").map((span) => (
-                <span className="mx-1 text-main absolute over-span top-[-0.8em]">
-                  {span}
-                </span>
-              ))}
+              {overSpan &&
+                overSpan
+                  ?.split(",")
+                  .map((span) => (
+                    <span className="mx-1 text-main absolute over-span top-[-0.8em]">
+                      {span}
+                    </span>
+                  ))}
             </div>
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 text-lg leading-loose dark:text-gray-400">

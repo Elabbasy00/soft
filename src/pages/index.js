@@ -31,7 +31,7 @@ const IndexPage = () => {
       {/* <Clients /> */}
       <div className="md:container md:mx-auto">
         <ClientSlider />
-        <TowSideLayout imgUrl={"/coding.gif"}>
+        <TowSideLayout imgUrl={"/coding.gif"} img2Url={"/Frame ibrahim.svg"}>
           <h1 className="text-5xl mb-3">
             Building software solutions with high resolution
           </h1>
