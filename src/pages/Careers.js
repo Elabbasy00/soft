@@ -32,7 +32,7 @@ const Careers = () => {
       <Header
         Title="Join"
         className="unhide-span"
-        overSpan=" team and work on interesting projects"
+        overSpan="team and work on interesting projects"
         SubHeading="We are a growing company that is dedicated to creating innovative solutions for our clients. We are looking for talented and motivated individuals who share our passion for technology and want to help us make a difference in the world."
         buttonText="Get free consultation"
       />

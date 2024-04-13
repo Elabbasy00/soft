@@ -22,26 +22,20 @@ const Header = ({
     () => {
       // gsap code here...
       const elements = container.current.children;
-      let animation = gsap.timeline({ repeat: 20 });
-      let duration = 0.6; //change this
-      let pause = 2; // change this
-      let stagger = duration + pause;
-      let repeatDelay = stagger * (elements.length - 1) + pause;
-      gsap.set(".animate_wrapper", { autoAlpha: 1 });
-      animation
-        .from(elements, {
-          y: 80,
-          duration: 0.6,
-          opacity: 0,
-          stagger: {
-            each: stagger,
-            repeat: -1,
-            repeatDelay: repeatDelay,
-          },
-        })
-        .to(
-          elements,
-          {
+      container.current.classList.remove("opacity-0");
+      gsap.set(container.current, {
+        autoAlpha: 1,
+      });
+
+      if (elements.length > 1) {
+        let animation = gsap.timeline({ repeat: 20 });
+        let duration = 0.6; //change this
+        let pause = 2; // change this
+        let stagger = duration + pause;
+        let repeatDelay = stagger * (elements.length - 1) + pause;
+
+        animation
+          .from(elements, {
             y: 80,
             duration: 0.6,
             opacity: 0,
@@ -50,9 +44,22 @@ const Header = ({
               repeat: -1,
               repeatDelay: repeatDelay,
             },
-          },
-          stagger
-        );
+          })
+          .to(
+            elements,
+            {
+              y: 80,
+              duration: 0.6,
+              opacity: 0,
+              stagger: {
+                each: stagger,
+                repeat: -1,
+                repeatDelay: repeatDelay,
+              },
+            },
+            stagger
+          );
+      }
     },
     { scope: container }
   );
@@ -65,16 +72,17 @@ const Header = ({
             {Title}
             <div
               ref={container}
-              className="inline-flex m-0 p-0 relative animate_wrapper"
+              className="inline-flex m-0 p-0 relative opacity-0"
             >
-              {overSpan &&
-                overSpan
-                  ?.split(",")
-                  .map((span) => (
-                    <span className="mx-1 text-main absolute over-span top-[-0.8em]">
-                      {span}
-                    </span>
-                  ))}
+              {overSpan && overSpan?.split(",")?.length > 1
+                ? overSpan
+                    ?.split(",")
+                    .map((span) => (
+                      <span className="mx-1 text-main absolute over-span top-[-0.8em]">
+                        {span}
+                      </span>
+                    ))
+                : overSpan}
             </div>
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 text-lg leading-loose dark:text-gray-400">
