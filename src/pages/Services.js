@@ -26,7 +26,7 @@ const Services = () => {
         SubHeading="Looking for a trustworthy partner to lead you through every step of the software development process? At Softylus, we answer business problems with custom-made software. So, you can focus on other important parts of your business, we will handle the rest."
         buttonText="Get free consultation"
       />
-      <div className="md:container md:mx-auto">
+      <div className="container md:mx-auto">
         <TowSideLayout reverse={true} imgUrl="/Image services1.svg">
           <h1 className="text-4xl mb-3">
             Get Your Software Development Services Sorted Out

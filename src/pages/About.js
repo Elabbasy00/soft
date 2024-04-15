@@ -25,32 +25,33 @@ const About = () => {
         buttonText="Get free consultation"
       />
       {/* <Clients/>   */}
-      <ClientSlider />
-      <TowSideLayout imgUrl={"/Imageright.svg"} reverse={true}>
-        <h1 className="text-5xl mb-3">
-          Make bold business statements, and We’ll deliver brilliant results
-        </h1>
-        <p>
-          To bring the world closer through technology, and enhance our optimal
-          solutions’ reach around the globe, so that, geographical barriers no
-          longer hinder anyone from advancing
-        </p>
-        <div class="grid grid-rows-2 md:grid-flow-col gap-3 grid-flow-row ">
-          <IconCard imageUrl="/icon1.svg" text="User-Centric Focus" />
-          <IconCard imageUrl="/icon3.svg" text="Performance Optimization" />
-          <IconCard imageUrl="/icon2.svg" text="Developmental Accuracy" />
-          <IconCard imageUrl="/icon4.svg" text="Security Vigilance" />
-        </div>
-        <div className="my-4">
-          <Link
-            to="/ContactUs"
-            className="no-underline inline-flex items-center justify-center px-3 py-3 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto"
-          >
-            Get free consultation
-          </Link>
-        </div>
-      </TowSideLayout>
-      {/* <FeatureSection2
+      <div className="container md:mx-auto">
+        <ClientSlider />
+        <TowSideLayout imgUrl={"/Imageright.svg"} reverse={true}>
+          <h1 className="text-4xl mb-3">
+            Make bold business statements, and We’ll deliver brilliant results
+          </h1>
+          <p>
+            To bring the world closer through technology, and enhance our
+            optimal solutions’ reach around the globe, so that, geographical
+            barriers no longer hinder anyone from advancing
+          </p>
+          <div class="grid grid-rows-2 md:grid-flow-col gap-3 grid-flow-row ">
+            <IconCard imageUrl="/icon1.svg" text="User-Centric Focus" />
+            <IconCard imageUrl="/icon3.svg" text="Performance Optimization" />
+            <IconCard imageUrl="/icon2.svg" text="Developmental Accuracy" />
+            <IconCard imageUrl="/icon4.svg" text="Security Vigilance" />
+          </div>
+          <div className="my-4">
+            <Link
+              to="/ContactUs"
+              className="no-underline inline-flex items-center justify-center px-3 py-3 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto"
+            >
+              Get free consultation
+            </Link>
+          </div>
+        </TowSideLayout>
+        {/* <FeatureSection2
         Title="Make bold business statements, and We’ll deliver brilliant results"
         SubHeading="To bring the world closer through technology, and enhance our optimal solutions’ reach around the globe, so that, geographical barriers no longer hinder anyone from advancing"
         buttonText="Get free consultation"
@@ -64,10 +65,11 @@ const About = () => {
         IconSrc4="/icon4.svg"
         Des4="Security Vigilance"
       /> */}
-      <OurDevelopment />
-      <SayCustomer />
-      {/* <Wefeaturedon /> */}
-      <FeatureSlider />
+        <OurDevelopment />
+        <SayCustomer />
+        {/* <Wefeaturedon /> */}
+        <FeatureSlider />
+      </div>
       <FooterCon
         Title="See if"
         TitleOverSpan="is right for you.Let’s make something great"

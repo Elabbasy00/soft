@@ -1,8 +1,9 @@
 .card-customer{
     background: #1D1313;
-    padding: 20px 35px;
+    padding: 20px 15px;
     border-radius: 20px;
-    transition: 10s all ease  !important;
+    /* transition: 10s all ease  !important; */
+    width: 100%;
 }
 .card-customer:hover{
      background: linear-gradient(96.9deg, #EC2227 12.93%, #DB070D 58.76%);

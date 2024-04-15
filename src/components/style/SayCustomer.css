@@ -31,7 +31,7 @@ span.swiper-pagination-bullet {
 }
 @media (min-width:1024px) {
     .Say-Coustmer-container{
-        width:1300px;
+        width:100%;
     }
 }
 @media (max-width: 1200px) {
@@ -40,10 +40,10 @@ span.swiper-pagination-bullet {
 
 @media (max-width: 1024px) {
     .Say-Coustmer-container{
-        width: 90%;
+        width: 100%;
     }
     .Say-Coustmer-container .swiper-slide {
-        height: 15em !important;
+        /* height: 15em !important; */
     }
 
     h1.Say-Coustmer-title{
@@ -56,11 +56,11 @@ span.swiper-pagination-bullet {
 
 @media (max-width: 767px) {
     .Say-Coustmer-container{
-        width: 90%;
+        width: 100%;
     }
-    .Say-Coustmer-sec .swiper-slide {
+    /* .Say-Coustmer-sec .swiper-slide {
         height: 15em !important;
-    }
+    } */
     .Say-Coustmer-container .swiper.swiper-initialized.swiper-horizontal.swiper-ios{
         padding-bottom: 70vw;
     }
