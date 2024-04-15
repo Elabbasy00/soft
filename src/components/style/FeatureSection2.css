@@ -62,9 +62,9 @@ aside.title-sec{
         flex-direction: column;
         gap: 10px;
     }
-    .container{
+    /* .container{
         display: none;
-    }
+    } */
     section.sec-width{
         flex-direction: column !important;
         gap: 30px;

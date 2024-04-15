@@ -29,7 +29,7 @@ const IndexPage = () => {
         overSpan={"Easily,Smoothly,Effortlessly"}
       />
       {/* <Clients /> */}
-      <div className="md:container md:mx-auto">
+      <div className="container md:mx-auto">
         <ClientSlider />
         <TowSideLayout imgUrl={"/coding.gif"} img2Url={"/Frame ibrahim.svg"}>
           <h1 className="text-5xl mb-3">

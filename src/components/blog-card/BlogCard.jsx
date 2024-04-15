@@ -5,21 +5,21 @@ function BlogCard({ item }) {
   return (
     <div
       key={item.id}
-      class="max-w-sm bg-mainDark rounded-lg ease-out duration-300 transition-all shadow w-fit h-[450px] hover:h-full mx-auto relative overflow-hidden group"
+      class="max-w-sm bg-mainDark rounded-lg ease-out duration-300 hover:h-[110%] transition-all shadow w-fit  h-full mx-auto relative overflow-hidden group"
     >
       <img class="rounded-t-lg" src={item.imgUrl} alt="" />
 
       <div class="px-3 py-4">
-        <h5 class="mb-2 text-1xl font-bold tracking-tight text-gray-900  ">
+        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900  ">
           {item.title}
         </h5>
 
-        <p class="mb-3 text-bas font-normal text-gray-700 dark:text-gray-400">
+        <p class="mb-3 md:text-base text-sm font-normal text-gray-700 dark:text-gray-400">
           {item.desc}
         </p>
         <Link
           to={item.url}
-          className="no-underline  group-hover:translate-y-[0px] ease-out duration-300 transition-all inline-flex  translate-y-[80px] items-center justify-center px-3 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
+          className="no-underline absolute  group-hover:translate-y-[0px]  ease-out duration-300 transition-all inline-flex  translate-y-[80px] items-center justify-center px-3 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
         >
           Read more
           <svg

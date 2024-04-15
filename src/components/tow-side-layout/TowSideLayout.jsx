@@ -11,14 +11,14 @@ function TowSideLayout({ children, imgUrl, img2Url, reverse }) {
         <div className="flex flex-col w-100 h-100">{children}</div>
         <div className="flex mx-auto items-start justify-start w-100 h-100 relative">
           <img className="w-fit h-fit object-cover" src={imgUrl} />
+          {img2Url && (
+            <img
+              className="w-full h-full right-[0%] top-0 object-contain z-10 absolute scale-[1.13] "
+              src={img2Url}
+            />
+          )}
         </div>
       </div>
-      {img2Url && (
-        <img
-          className="w-auto h-auto right-[-3%] top-10 object-contain z-10  absolute"
-          src={img2Url}
-        />
-      )}
     </section>
   );
 }
