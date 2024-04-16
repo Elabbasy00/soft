@@ -10,7 +10,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 const SecTwo = () => {
   return (
     <TowSideLayout reverse={true} imgUrl={"/Frame 1000003299.svg"}>
-      <h1 className="text-4xl mb-3">
+      <h1 className="text-3xl md:text-5xl mb-3">
         We work across many industries – find yours!
       </h1>
       <div>

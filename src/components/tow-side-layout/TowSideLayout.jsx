@@ -2,9 +2,9 @@ import React from "react";
 
 function TowSideLayout({ children, imgUrl, img2Url, reverse }) {
   return (
-    <section className="md:mx-auto py-20 pl-4 pr-4 md:pl-0 md:pr-0 relative">
+    <section className="md:mx-auto py-20 pl-4 pr-4 md:pl-0 md:pr-0  ">
       <div
-        className={`relative flex items-center flex-col-reverse  lg:flex-row align md:gap-8 lg:gap-12 gap-4 ${
+        className={` flex items-center flex-col-reverse  lg:flex-row align md:gap-8 lg:gap-12 gap-4 ${
           reverse ? "lg:flex-row-reverse" : ""
         }`}
       >
@@ -13,7 +13,7 @@ function TowSideLayout({ children, imgUrl, img2Url, reverse }) {
           <img className="w-fit h-fit object-cover" src={imgUrl} />
           {img2Url && (
             <img
-              className="w-full h-full right-[0%] top-0 object-contain z-10 absolute scale-[1.13] "
+              className="w-fit h-fit left-0 top-0 object-contain z-102 absolute scale-[1.03] md:scale-[1.09]"
               src={img2Url}
             />
           )}

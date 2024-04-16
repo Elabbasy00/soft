@@ -10,63 +10,61 @@ const NavBar = () => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div className="container">
-      <div className="w-100 pt-4 flex">
-        <nav className="NavBar-sec">
-          <div>
-            <Link to="../">
-              <img src="/Logo Softylus.svg" alt="Softylus Logo" />
-            </Link>
-          </div>
-
-          <div className="navBar-page">
-            <Link to="/Services">Services</Link>
-            <Link to="/Clients">Clients</Link>
-            <Link to="/About">About Us</Link>
-            <Link to="/Projects">Projects</Link>
-            <Link to="/ContactUs" className="btn-contact contact-pc">
-              Contact Us
-            </Link>
-          </div>
-
-          <div className="NavBar-sec-3">
-            <Link to="/ContactUs" className="btn-contact">
-              Contact Us
-            </Link>
-          </div>
-        </nav>
+    <div className="w-full pt-4 md:px-[70px]  flex">
+      <nav className="NavBar-sec">
         <div>
-          <Button color="danger" onClick={toggle}>
-            <img src="/menu.svg" />
-          </Button>
-          <Modal isOpen={modal} toggle={toggle} fullscreen>
-            <ModalHeader toggle={toggle}></ModalHeader>
-            <ModalBody>
-              <div className="navBar-hamburger">
-                <Link to="../">
-                  <img src="/Logo Softylus.svg" alt="Softylus Logo" />
-                </Link>
-                <Link to="/Services">Services</Link>
-                <Link to="/Clients">Clients</Link>
-                <Link to="/About">About Us</Link>
-                <Link to="/Projects">Projects</Link>
-                <div className="hamb-sec-3">
-                  <Link to="/ContactUs" className="btn-contact-hamb">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </ModalBody>
-            <ModalFooter>
-              <Button color="primary" onClick={toggle}>
-                Do Something
-              </Button>{" "}
-              <Button color="secondary" onClick={toggle}>
-                Cancel
-              </Button>
-            </ModalFooter>
-          </Modal>
+          <Link to="../">
+            <img src="/Logo Softylus.svg" alt="Softylus Logo" />
+          </Link>
         </div>
+
+        <div className="navBar-page">
+          <Link to="/Services">Services</Link>
+          <Link to="/Clients">Clients</Link>
+          <Link to="/About">About Us</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/ContactUs" className="btn-contact contact-pc">
+            Contact Us
+          </Link>
+        </div>
+
+        <div className="NavBar-sec-3">
+          <Link to="/ContactUs" className="btn-contact">
+            Contact Us
+          </Link>
+        </div>
+      </nav>
+      <div>
+        <Button color="danger" onClick={toggle}>
+          <img src="/menu.svg" />
+        </Button>
+        <Modal isOpen={modal} toggle={toggle} fullscreen>
+          <ModalHeader toggle={toggle}></ModalHeader>
+          <ModalBody>
+            <div className="navBar-hamburger">
+              <Link to="../">
+                <img src="/Logo Softylus.svg" alt="Softylus Logo" />
+              </Link>
+              <Link to="/Services">Services</Link>
+              <Link to="/Clients">Clients</Link>
+              <Link to="/About">About Us</Link>
+              <Link to="/Projects">Projects</Link>
+              <div className="hamb-sec-3">
+                <Link to="/ContactUs" className="btn-contact-hamb">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" onClick={toggle}>
+              Do Something
+            </Button>{" "}
+            <Button color="secondary" onClick={toggle}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </Modal>
       </div>
     </div>
   );

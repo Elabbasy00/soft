@@ -25,7 +25,7 @@ const About = () => {
         buttonText="Get free consultation"
       />
       {/* <Clients/>   */}
-      <div className="container md:mx-auto">
+      <div className="md:px-[70px] mx-auto">
         <ClientSlider />
         <TowSideLayout imgUrl={"/Imageright.svg"} reverse={true}>
           <h1 className="text-4xl mb-3">

@@ -13,6 +13,7 @@ module.exports = {
         "hero-pattern": "url('/HeroN.svg')",
         "service-desktop": "url('/services Banner.svg')",
         "service-mobile": "url('/Image serves mobile.svg')",
+        "icon-pattern": "url('/Frame ibrahim.svg')",
       },
       backgroundColor: {
         main: "#ec2227",

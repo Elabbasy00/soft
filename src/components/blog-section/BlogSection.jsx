@@ -27,7 +27,9 @@ const blogs = [
 function BlogSection() {
   return (
     <section className="md:container md:mx-auto py-10 relative h-full">
-      <h1 className="text-5xl  text-center my-10">Our Latest Articles</h1>
+      <h1 className="text-3xl md:text-5xl text-center my-10">
+        Our Latest Articles
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
         {blogs.map((item) => (
           <BlogCard item={item} key={item.id} />

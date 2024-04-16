@@ -37,7 +37,7 @@ const Careers = () => {
         buttonText="Get free consultation"
       />
 
-      <div className="flex flex-col gap-2 pt-[80px] md:container justify-center mx-auto">
+      <div className="flex flex-col gap-2 pt-[80px] md:container justify-center mx-auto md:px-[70px]">
         <div className="flex justify-center items-center flex-col gap-2">
           <h2> Careers Opprtunities</h2>
           <p className="!text-gray-400">

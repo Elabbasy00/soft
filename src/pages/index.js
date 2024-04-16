@@ -29,10 +29,14 @@ const IndexPage = () => {
         overSpan={"Easily,Smoothly,Effortlessly"}
       />
       {/* <Clients /> */}
-      <div className="container md:mx-auto">
+      <div className="md:px-[70px] mx-auto">
         <ClientSlider />
+
+        <div class="container">
+          <img class="circle-sec" id="circle1" src="/Frame 1000003358.svg" />
+        </div>
         <TowSideLayout imgUrl={"/coding.gif"} img2Url={"/Frame ibrahim.svg"}>
-          <h1 className="text-5xl mb-3">
+          <h1 className="text-3xl md:text-5xl mb-3 mt-3">
             Building software solutions with high resolution
           </h1>
           <p>
@@ -55,9 +59,7 @@ const IndexPage = () => {
             </Link>
           </div>
         </TowSideLayout>
-        <div class="container">
-          <img class="circle-sec" id="circle1" src="/Frame 1000003358.svg" />
-        </div>
+
         {/* <SecOne
         Title="Building software solutions with high resolution"
         SubHeading="We help customers with digitalized solutions in web development, mobile app development, and UI/UX design. We provide services for businesses of all sizes in different niches."

@@ -16,7 +16,7 @@ const clients = [
 ];
 function ClientSlider() {
   return (
-    <div className="md:mx-auto overflow-hidden my-10">
+    <div className="md:mx-auto overflow-hidden mt-20 mb-5">
       <SwiperComponent
         className="pb-0"
         slidesPerView={7}

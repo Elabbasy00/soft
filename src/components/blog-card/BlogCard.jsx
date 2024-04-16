@@ -19,7 +19,7 @@ function BlogCard({ item }) {
         </p>
         <Link
           to={item.url}
-          className="no-underline absolute  group-hover:translate-y-[0px]  ease-out duration-300 transition-all inline-flex  translate-y-[80px] items-center justify-center px-3 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
+          className="no-underline md:absolute  md:group-hover:translate-y-[0px]  ease-out duration-300 transition-all inline-flex  md:translate-y-[80px] items-center justify-center px-3 py-2 text-base font-medium text-white bg-main hover:opacity-85 border-0 rounded-full  focus:ring-10 w-auto "
         >
           Read more
           <svg

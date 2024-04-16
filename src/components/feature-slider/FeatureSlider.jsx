@@ -14,7 +14,9 @@ const featurres = [
 function FeatureSlider() {
   return (
     <div className="md:container md:mx-auto overflow-hidden my-10">
-      <h1 className="text-5xl text-center mb-5 mt-12">We featured on</h1>
+      <h1 className="text-3xl md:text-5xl text-center mb-5 mt-12">
+        We featured on
+      </h1>
       <SwiperComponent
         className="pb-0"
         slidesPerView={5}
