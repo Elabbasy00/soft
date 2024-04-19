@@ -42,7 +42,7 @@ const NavBar = () => {
           <ModalHeader toggle={toggle}></ModalHeader>
           <ModalBody>
             <div className="navBar-hamburger">
-              <Link to="../">
+              <Link to="../" className="mx-auto">
                 <img src="/Logo Softylus.svg" alt="Softylus Logo" />
               </Link>
               <Link to="/Services">Services</Link>

@@ -1,8 +1,9 @@
 .Say-Coustmer-sec{
-    margin-top: 200px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0 10px
 } 
 
 .slider-sec{
@@ -19,9 +20,10 @@ span.swiper-pagination-bullet {
     background: white !important;
     width: 16px;
     height: 16px;
+
 }
 .Say-Coustmer-sec .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
-    padding: 50px;
+padding-bottom: 30px;
 }
 .Say-Coustmer-sec .swiper-button-next:after{
     color: #f5f5f5;

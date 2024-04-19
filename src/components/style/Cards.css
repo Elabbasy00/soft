@@ -10,7 +10,8 @@
     line-height: 25px;
 }
 .container-cards{
-    margin-top: 200px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     text-align: center;
     display: flex;
     flex-direction: column;

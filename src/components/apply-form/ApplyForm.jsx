@@ -84,7 +84,7 @@ function ApplyForm() {
           value={formData.message}
           rows={3}
           className="shadow-sm bg-transparent border border-gray-200 text-white text-sm rounded-lg block w-full p-2.5 "
-          placeholder="emailaddress@email.com"
+          placeholder="message"
           required
         />
       </div>

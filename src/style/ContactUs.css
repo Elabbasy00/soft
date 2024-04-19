@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 .contact-title{
-    width: 55%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;

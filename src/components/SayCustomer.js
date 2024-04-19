@@ -9,12 +9,12 @@ import { CardCustomer } from "./CardCustomer";
 import "./style/SayCustomer.css";
 const SayCustomer = () => {
   return (
-    <section className="Say-Coustmer-sec">
+    <section className="Say-Coustmer-sec ">
       <div className="Say-Coustmer-container">
         <h1 className="Say-Coustmer-title">
           See what our customer say about us
         </h1>
-        <div className="slider-sec">
+        <div className="slider-sec relative">
           <Swiper
             breakpoints={{
               640: {
@@ -44,6 +44,7 @@ const SayCustomer = () => {
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
+            className="py-10"
           >
             <div className="Say-Coustmer-slider">
               <SwiperSlide>

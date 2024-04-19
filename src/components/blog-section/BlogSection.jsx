@@ -26,7 +26,7 @@ const blogs = [
 ];
 function BlogSection() {
   return (
-    <section className="md:container md:mx-auto py-10 relative h-full">
+    <section className="mx-2 md:mx-auto py-10 relative h-full">
       <h1 className="text-3xl md:text-5xl text-center my-10">
         Our Latest Articles
       </h1>
